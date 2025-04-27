@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obys Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link
       rel="shortcut icon"
       href="./favicon_io/Favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <!-- Recommended -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -39,7 +40,7 @@
     </div>
 
     <div id="main">
-      <div id="page1">
+      <div id="page1" data-scroll>
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -105,7 +106,7 @@
           <h1>Experience</h1>
         </div>
       </div>
-      <div id="page2">
+      <div id="page2" data-scroll data-scroll-speed="2">
         <div id="videocontainer">
           <div id="video-cursor">
             <i class="ri-play-fill"></i>
@@ -122,8 +123,21 @@
           ></video>
         </div>
       </div>
-      <div id="page3"></div>
-      <div id="page4">
+      <div id="page3" data-scroll>
+        <h1>Our Projects</h1>
+        <div class="underline"></div>
+        <div id="image-cont">
+          <div class="image">
+            <img src="https://obys.agency/wp-content/uploads/2023/08/Olga_Prudka_1.png" alt="">
+            <img src="https://obys.agency/wp-content/uploads/2023/08/Olga_Prudka_3.png" alt="">
+          </div>
+          <div class="image">
+            <img src="" alt="">
+          </div>
+        </div>
+
+      </div>
+      <div id="page4" data-scroll>
         <div id="content">
           <h1>About Obys</h1>
           <div class="underline"></div>
@@ -169,9 +183,10 @@
             </div>
           </div>
           <div class="underline"></div>
+          <h6>We work with</h6>
         </div>
       </div>
-      <div id="page5">
+      <div id="page5" data-scroll>
         <div class="elem">
           <h1><span>Sport</span> - Fashion - Technology - </h1>
           <h1><span>Sport</span> - Fashion - Technology - </h1>
@@ -219,6 +234,8 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -232,6 +249,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
     <script
       type="text/javascript"
